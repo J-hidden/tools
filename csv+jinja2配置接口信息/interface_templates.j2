@@ -1,0 +1,10 @@
+interface {{interface}}
+    description {{description}}
+    {%if vlan=='trunk' -%}
+    port link-type trunk
+    port trunk allow-pass vlan 2 to 4094
+    {% else -%}
+    port link-type access
+    port default vlan {{vlan}}
+    {%endif-%}
+    undo shutdown
