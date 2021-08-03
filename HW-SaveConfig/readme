@@ -1,0 +1,20 @@
+ 注：V1版本使用V1+ip.txt即可
+    V2版本使用V2+ip.txt即可
+    V3版本使用V3+iP2.txt即可：
+
+
+  一、脚本使用了第三方模块，netmiko模块，需要先安装模块,使用以下命令。
+      pip install netmiko
+      
+  二、使用HW配置备份V2即可
+  
+      如需使用此脚本只需要更改如下参数
+  
+      1、倒数第二行
+      lixilei = Connect_HW('username','password')
+      更改username为自己的登入用户名
+      更改password为自己的登入密码
+  
+      2、更改ip.txt中的ip地址
+  三、使用V3版本
+     直接更改iP2中的ip+username+password即可完成配置备份
