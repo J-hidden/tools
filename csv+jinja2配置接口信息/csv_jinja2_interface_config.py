@@ -23,9 +23,9 @@ for read in reader:
 
 # netmiko连接交换机的信息，也可以通过文件读取
 dev_info = {
-    'ip': '172.21.254.18',
+    'ip': '192.168.1.1',
     'username': 'lixilei',
-    'password': 'Roward*8@li',
+    'password': 'python3',
     'device_type': 'huawei'
 }
 # 通过\n来判断不同的将interface_configs拆解成一个个列表
